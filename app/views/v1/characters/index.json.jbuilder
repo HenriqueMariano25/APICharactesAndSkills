@@ -24,7 +24,6 @@ json.array! @characters do |character|
     proficient = 6
   end
   json.proficiency_bonus proficient
-  skillls = character.skill
   json.skills character.skill do |skill|
     json.id skill.id
     json.name skill.name
